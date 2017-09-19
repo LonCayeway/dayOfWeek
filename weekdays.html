@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Day of Week Welcome</title>
+		<link rel="stylesheet" style type="text/css" href="style.css">
+		
+	</head>
+	<body>
+		
+		<!-- Use new Date().getDate to get the current day of the week;
+			This will return a number from 0 to 6, with 0 representing Sunday and 6 representing Saturday.
+			Use a switch statement to assign the appropriate day.
+			Use DOM to display a welcome message containing the day of the week on a webpage. -->	
+		
+		<h1 id="today">Welcome to our website! Do you know what day it is? </h1>
+		
+	
+		<script>
+			
+			var dayName;
+			
+			switch (new Date().getDay())
+			
+			{
+				case 0:
+					day = "Sunday!";
+					break;
+					
+				case 1:
+					day = "Monday!";
+					break;	
+					
+				case 2:
+					day = "Tuesday!";
+					break;	
+					
+				case 3:
+					day = "Wednesday!";
+					break;
+					
+				case 4:
+					day = "Thursday!";
+					break;
+					
+				case 5:
+					day = "Friday!";
+					break;
+					
+				case 6:
+					day = "Saturday!";
+					break;
+				
+			}
+			
+					
+			document.getElementById("today").innerHTML += day;
+			
+		</script>
+		
+	</body>
+</html>
